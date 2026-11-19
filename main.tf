@@ -16,4 +16,7 @@ provider "aws" {
 resource "aws_instance" "Kumarinfra" {
 	ami = "ami-0c2b8ca1dad447f8a" 
 	instance_type = "t3.micro"
+    tags = {
+        	Name = "kumarinstance"
+ 	}
 }
